@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         // Programo el OnClickListener
         boton.setOnClickListener {
             // Obtengo el texto del campo EditText
-            val dato = editText.text.toString()
+            val dato = editText.text.toString().trim() // Eliminamos espacios al inicio/final
 
             // Creo el Intent para ir a la segunda actividad
             val intent = Intent(this, Activity2::class.java)

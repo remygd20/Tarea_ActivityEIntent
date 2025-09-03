@@ -29,7 +29,7 @@ class Activity2 : AppCompatActivity() {
         val datoRecibido = intent.getStringExtra("dato")
 
         // Lo mostramos en el textView
-        textViewDatoRecibido.text = "Dato recibido: $datoRecibido"
+        textViewDatoRecibido.text = "¡Has enviado este dato!\n\n\"$datoRecibido\""
 
         val botonVolver = findViewById<Button>(R.id.btnVolver)
         botonVolver.setOnClickListener {
